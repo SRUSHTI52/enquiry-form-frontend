@@ -1,5 +1,6 @@
 // src/EnquiryForm.js
 import React, { useState } from 'react';
+require('dotenv').config();
 import axios from 'axios';
 import './EnquiryForm.css';
 
@@ -27,7 +28,7 @@ const EnquiryForm = () => {
 
     console.log(formData);
 
-    axios.post('http://localhost:5000/enquiry', formData)
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/enquiry`, formData)
       .then(response => {
         alert('Enquiry submitted successfully!');
         setFormData({
