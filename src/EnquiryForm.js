@@ -1,6 +1,5 @@
 // src/EnquiryForm.js
 import React, { useState } from 'react';
-require('dotenv').config();
 import axios from 'axios';
 import './EnquiryForm.css';
 
