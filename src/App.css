@@ -1,4 +1,100 @@
-.App {
+
+@font-face {
+  font-family: 'bs';
+  src: url('../src/fonts/brown-sugar.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'nexa';
+  src: url('../src/fonts/NexaBold.otf') format('opentype');
+  
+}
+
+@font-face{
+  font-family: 'nexa-light';
+  src: url('../src/fonts/NexaLight.otf') format('opentype');
+
+}
+
+
+h1{
+  text-align: start;
+  margin-left: 20px;
+  font-family: 'bs', sans-serif;
+}
+span{
+  font-family: 'nexa-light', sans-serif;
+  
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+}
+.heading img{
+  height: 90px;
+  width: 70px;
+}
+body{
+  margin: 0;
+  padding: 0px;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  margin-left: 40px;
+background-color: #f0f0f0;
+color: #132236;
+
+}
+.background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background-image: url('../public/back.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background-color: rgba(153, 153, 153, 0.5); 
+  z-index: -1;
+}
+
+
+@media (max-width: 600px) {
+  #h{
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  #h{
+   width: auto;
+   height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +131,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
